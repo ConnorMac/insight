@@ -1,8 +1,8 @@
 {
-  "name": "insight-ui",
+  "name": "rehive-insight-ui",
   "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the bitcoin network and build your own services with it.",
-  "version": "5.0.0-beta.18",
-  "repository": "git://github.com/bitpay/insight-ui.git",
+  "version": "5.0.0-beta.22",
+  "repository": "git:https://github.com/ConnorMac/insight.git#rehive-skin",
   "bugs": {
     "url": "https://github.com/bitpay/insight-ui/issues"
   },
@@ -22,9 +22,9 @@
     "routePrefix": ""
   },
   "scripts": {
-    "build": "bower install && grunt compile",
+    "build": "bower install --allow-root && grunt compile --allow-root",
     "watch": "grunt",
-    "install-and-build": "npm install && npm run build"
+    "install-and-build": "npm install --allow-root && npm run build --allow-root"
   },
   "dependencies": {},
   "devDependencies": {
