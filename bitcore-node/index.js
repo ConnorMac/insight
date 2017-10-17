@@ -28,7 +28,7 @@ InsightUI.prototype.start = function(callback) {
     if (err) {
       return callback(err);
     }
-    self.indexFile = self.filterIndexHTML(fs.readFileSync(__dirname + '/../public/index-template.html', {encoding: 'utf8'}));
+    self.indexFile = self.filterIndexHTML(fs.readFileSync(__dirname + '/../public/index.html', {encoding: 'utf8'}));
     callback();
   });
 
